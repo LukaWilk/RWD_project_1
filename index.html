@@ -19,14 +19,14 @@
     <header id="header">
       <a href="#" class="logo">LOGO</a>
       <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#service">SERVICE</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#team">TEAM</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#home" onclick="toggle()">HOME</a></li>
+        <li><a href="#about" onclick="toggle()">ABOUT</a></li>
+        <li><a href="#service" onclick="toggle()">SERVICE</a></li>
+        <li><a href="#portfolio" onclick="toggle()">PORTFOLIO</a></li>
+        <li><a href="#team" onclick="toggle()">TEAM</a></li>
+        <li><a href="#contact" onclick="toggle()">CONTACT</a></li>
       </ul>
-      <div class="toggle"></div>
+      <div class="toggle" onclick="toggle()"></div>
     </header>
 
     <section id="home">
@@ -120,5 +120,12 @@
         </p>
       </div>
     </section>
+
+    <script type="text/javascript">
+        function toggle(){
+            var header = document.getElementById("header")
+            header.classList.toggle('active')
+        }
+    </script>
   </body>
 </html>
