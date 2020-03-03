@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -85,7 +86,16 @@ section a {
     padding: 8px 10px;
     text-decoration: none;
     font-size: 18px;
-    background: #111;
+    background: #04639b;
     color: #fff;
     margin-top: 20px;
 }
+
+section:nth-child(odd){
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: rgb(186, 187, 187);
+    color: #fff;
+}
+
